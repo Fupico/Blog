@@ -12,10 +12,10 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          Fupico
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div> v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
@@ -45,15 +45,15 @@
   </q-layout>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref } from 'vue';
-import EssentialLink, { EssentialLinkProps } from 'components/EssentialLink.vue';
+import EssentialLink from 'components/EssentialLink.vue';
 
 defineOptions({
   name: 'MainLayout'
 });
 
-const linksList: EssentialLinkProps[] = [
+const linksList = [
   {
     title: 'Docs',
     caption: 'quasar.dev',

@@ -1,18 +1,61 @@
-import { RouteRecordRaw } from 'vue-router';
+import { RouteRecordRaw } from 'vue-router'
+
+
+// *#* Empty Layout Start
+const emptyLayout: RouteRecordRaw = {
+  path: '/',
+  component: () => import('layouts/Empty.vue'),
+  children: [
+    { path: '/:catchAll(.*)*', component: () => import('src/pages/ErrorNotFound.vue') },
+    { path: '/is-not-auth', component: () => import('src/pages/IsNotAuth.vue') },
+    { path: '/unauthorize', component: () => import('src/pages/Unauthorize.vue') },
+    { path: '/login', component: () => import('src/pages/Login.vue') },
+  ]
+};
+// *#* Empty Layout End
+
+
+// *#* User Layout Start
+const userLayout: RouteRecordRaw =
+{
+  path: '',
+  component: () => import('src/layouts/User/UserLayout.vue'),
+  children: [
+    { path: '', component: () => import('src/pages/user/Home.vue') },
+    { path: '/home', component: () => import('src/pages/user/Home.vue') },
+
+  ],
+  meta: { private: true }
+};
+// *#* User Layout End
+
+
+
+// *#* Admin Layout Start
+const adminLayout: RouteRecordRaw = {
+  path: '/',
+  component: () => import('src/layouts/Admin/AdminLayout.vue'),
+  children: [
+    { path: '/dashboard', component: () => import('src/pages/admin/Dashboard.vue') },
+
+  ],
+  meta: { private: true }
+};
+// *#* Admin Layout End
+
+
+
+
+
 
 const routes: RouteRecordRaw[] = [
-  {
-    path: '/',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/IndexPage.vue') }],
-  },
-
-  // Always leave this as last one,
-  // but you can also remove it
-  {
-    path: '/:catchAll(.*)*',
-    component: () => import('pages/ErrorNotFound.vue'),
-  },
+  emptyLayout,
+  userLayout,
+  adminLayout,
 ];
 
-export default routes;
+
+
+
+
+export default routes
