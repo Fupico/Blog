@@ -44,7 +44,7 @@
   <!-- *#* Blog Card Start -->
   <div class=" row">
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 q-pa-md " v-for="(i,index) in 10" :v-key="index++">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 q-pa-md " v-for="(i,index) in 10" :v-key="index++">
 
       <BlogCard :title="'Blog - '+index++"
       description="Açıklama... dlfkld dfdfd d fdf fdfdfd"
