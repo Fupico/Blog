@@ -23,6 +23,7 @@ const userLayout: RouteRecordRaw =
   children: [
     { path: '', component: () => import('src/pages/user/Home.vue') },
     { path: '/home', component: () => import('src/pages/user/Home.vue') },
+    { path: '/blog-detail', component: () => import('src/pages/user/blog/BlogDetail.vue') },
 
   ],
   meta: { private: true }
