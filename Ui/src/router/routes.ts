@@ -53,6 +53,12 @@ const routes: RouteRecordRaw[] = [
   emptyLayout,
   userLayout,
   adminLayout,
+  {
+    path: '/BlogDetail',
+    component: () => import('layouts/Empty.vue'),
+    children: [{ path: '', component: () => import('pages/user/blog/BlogDetail.vue') }],
+  },
+
 ];
 
 

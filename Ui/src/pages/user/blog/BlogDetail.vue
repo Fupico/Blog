@@ -11,7 +11,7 @@
   <div class="q-pa-md" style="margin-left: 20px">
     <q-breadcrumbs separator="---" class="text-orange" active-color="secondary">
       <q-breadcrumbs-el icon="home" />
-      <q-breadcrumbs-el label="Bloglar" icon="widgets" />
+      <q-breadcrumbs-el label="Bloglar" to="/" icon="widgets" />
       <q-breadcrumbs-el label="Blog Detay" icon="navigation" />
     </q-breadcrumbs>
   </div>
@@ -74,8 +74,8 @@
         </div>
 
         <!-- <div class="q-pa-md" flat bordered >
-    Konu Etiketleri: 
-    <q-btn dense flat style="color: goldenrod;" label="YAZILIM" /> 
+    Konu Etiketleri:
+    <q-btn dense flat style="color: goldenrod;" label="YAZILIM" />
     <q-btn dense flat style="color: goldenrod;" label="VUE" />
     <q-btn dense flat style="color: goldenrod;" label="JAVASCRIPT" />
   </div> -->
@@ -94,11 +94,11 @@
                 <div class="col-6 q-px-sm">
                   <q-input filled v-model="text" label="Ad Soyad" dense />
                 </div>
-            
+
                 <div class="col-6 q-px-sm">
                   <q-input filled v-model="text" label="E-mail" dense />
                 </div>
-             
+
               </div>
               <div class="row q-py-sm ">
                 <div class="col-12 q-px-sm">
@@ -109,13 +109,13 @@
                     label="Yorumunuz.."
                   />
                 </div>
-                
+
               </div>
               <div class="row q-px-sm ">
                 <div class="col-12" align="right">
                     <q-btn color="secondary" icon-right="send" label="Gönder" />
                 </div>
-                
+
               </div>
             </q-card-section>
           </q-card>

@@ -2,7 +2,8 @@
   <q-footer elevated class="bg-grey-8 text-white">
     <q-toolbar>
       <q-toolbar-title>
-        <div>Fupico</div>
+        <a href="https://github.com/Fupico/Blog"> <center> <div><b>Fupico</b></div> </center> </a>
+
       </q-toolbar-title>
     </q-toolbar>
   </q-footer>

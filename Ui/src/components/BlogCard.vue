@@ -40,7 +40,7 @@
         </q-card-section>
 
         <q-card-actions>
-          <q-btn flat color="teal" label="Detail" :to="$props.detailUrl" />
+          <q-btn flat color="teal" label="Detail" :to="'/'+$props.detailUrl" />
 
           <q-space />
 

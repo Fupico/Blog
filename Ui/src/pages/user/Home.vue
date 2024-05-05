@@ -44,13 +44,13 @@
   <!-- *#* Blog Card Start -->
   <div class=" row">
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 q-pa-md " v-for="(i,index) in 10" :v-key="index++">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 q-pa-md " v-for="(i,index) in 12" :v-key="index++">
 
       <BlogCard :title="'Blog - '+index++"
       description="Açıklama... dlfkld dfdfd d fdf fdfdfd"
       date="12/05/2024"
-
-      img-url="https://bilgiyazan.com.tr/wp-content/uploads/2018/01/BigliYazan-AspNetCore-E%C4%9Fitimi1.jpg"></BlogCard>
+      :detailUrl="'BlogDetail'"
+      img-url="https://fupico.com/assets/gorsel.jpg"></BlogCard>
 
 
     </div>
