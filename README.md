@@ -1,8 +1,8 @@
 # BLOG - Geleceğin Öncüleri Topluluğu [Blog](https://fupico.com)
 
-### [Geliştirme Günlüğü](/ProjectNotes/Development_Diary.md)
+###### [Geliştirme Günlüğü](/ProjectNotes/Development_Diary.md)
 
-##### Kurulum
+## Kurulum
 
 ### Visual Studio Code Editörü ile açın ve bir alt dizin olan ui dizinine geçin
 ````
@@ -16,6 +16,12 @@ npm install
 ````
 quasar dev
 ````
+
+#### [Backend Notları](ProjectNotes/Backend.md)
+
+#### [Frontend Notları](ProjectNotes/Frontend.md)
+
+#### [Project Detayları](ProjectNotes/ProjectDetail.md)
 
 
 # BLOG - Future Pioneers Community [Blog](https://fupico.com)
@@ -36,3 +42,9 @@ npm install
 ````
 quasar dev
 ````
+
+#### [Backend Notices](ProjectNotes/Backend.md)
+
+#### [Frontend Notices](ProjectNotes/Frontend.md)
+
+#### [Project Details](ProjectNotes/ProjectDetail.md)
