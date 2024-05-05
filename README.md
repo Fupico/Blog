@@ -1,6 +1,28 @@
-# BLOG - Future Pioneers Community
+# BLOG - Geleceğin Öncüleri Topluluğu [Blog](https://fupico.com)
 
-## UI
+### [Geliştirme Günlüğü](/ProjectNotes/Development_Diary.md)
+
+##### Kurulum
+
+### Visual Studio Code Editörü ile açın ve bir alt dizin olan ui dizinine geçin
+````
+cd ui
+````
+### Paketleri Yükleyin
+````
+npm install
+````
+### Localinizde Projeyi Başlatın
+````
+quasar dev
+````
+
+
+# BLOG - Future Pioneers Community [Blog](https://fupico.com)
+
+##### [Development Diary](/ProjectNotes/Development_Diary.md)
+
+## Install
 
 ### Enter the UI (Frontend files at UI Folder)
 ````
