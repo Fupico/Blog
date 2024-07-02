@@ -8,39 +8,39 @@
 
       <q-card class="blog-card" flat bordered>
         <q-img
-          :src="$props.imgUrl"
+          :src="props.imgUrl"
           style=" height: 250px; background-color:#ccc;"
           fit="scale-down"
         />
 
         <q-card-section>
-          <div class="text-overline text-orange-9">{{ $props.date }}</div>
+          <div class="text-overline text-orange-9">{{ props.date }}</div>
           <div class="text-h5 q-mt-sm q-mb-xs">
-            <span v-if="$props.title.length<25">
-              {{ $props.title }}
+            <span v-if="props.title.length<25">
+              {{ props.title }}
             </span>
 
             <span v-else>
-              {{ $props.title.substring(0,25) }}
+              {{ props.title.substring(0,25) }}
               <span>...</span>
             </span>
 
           </div>
           <div class="text-caption text-grey" style="height: 50px;">
 
-            <span v-if="$props.description.length<100">
-              {{ $props.description }}
+            <span v-if="props.description.length<100">
+              {{ props.description }}
             </span>
 
             <span v-else>
-              {{ $props.description.substring(0,100) }}
+              {{ props.description.substring(0,100) }}
               <span>...</span>
             </span>
           </div>
         </q-card-section>
 
         <q-card-actions>
-          <q-btn flat color="teal" label="Detail" :to="'/'+$props.detailUrl" />
+          <q-btn flat color="teal" label="Detail" :to="'/'+props.detailUrl" />
 
           <q-space />
 

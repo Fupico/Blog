@@ -1,9 +1,9 @@
 <template>
-  <q-footer elevated class="bg-grey-8 text-white">
+  <q-footer  class="bg-transparent flat no-shadow"  >
     <q-toolbar>
       <q-toolbar-title>
-        <a href="https://github.com/Fupico/Blog"> <center> <div><b>Fupico</b></div> </center> </a>
-
+        <!-- <a  style="text-decoration: none;" href="https://github.com/Fupico"> <center> <div><b>Fupico</b></div> </center> </a> -->
+        <p align="center" class="text-primary text-caption" > <b>  ©2024 Fupico - Tüm Hakları Saklıdır</b></p>
       </q-toolbar-title>
     </q-toolbar>
   </q-footer>
