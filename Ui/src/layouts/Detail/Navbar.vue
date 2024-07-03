@@ -1,7 +1,8 @@
 <template>
 
-  <q-header bordered class="bg-blue-10 text-white">
+  <q-header bordered class="bg-primary text-white">
     <q-toolbar>
+      <q-btn flat @click="drawer = !drawer" round dense icon="menu" />
       <q-toolbar-title clickable @click="router.push('/')">
         
           <q-avatar>

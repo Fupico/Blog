@@ -24,11 +24,30 @@ const userLayout: RouteRecordRaw =
     { path: '', component: () => import('src/pages/user/Home.vue') },
     { path: '/home', component: () => import('src/pages/user/Home.vue') },
     { path: '/blog-detail', component: () => import('src/pages/user/blog/BlogDetail.vue') },
+    { path: '/project-detail', component: () => import('src/pages/user/ProjectDetail.vue') },
+    //{ path: '/backend', component: () => import('src/pages/user/Backend.vue') },
 
   ],
   meta: { private: true }
 };
 // *#* User Layout End
+
+// *#* Detail Layout Start
+const detailLayout: RouteRecordRaw =
+{
+  path: '',
+  component: () => import('src/layouts/Detail/DetailLayout.vue'),
+  children: [
+    // { path: '', component: () => import('src/pages/user/Home.vue') },
+    // { path: '/home', component: () => import('src/pages/user/Home.vue') },
+    // { path: '/blog-detail', component: () => import('src/pages/user/blog/BlogDetail.vue') },
+    // { path: '/project-detail', component: () => import('src/pages/user/ProjectDetail.vue') },
+     { path: '/backend', component: () => import('src/pages/user/Backend.vue') },
+
+  ],
+  meta: { private: true }
+};
+// *#* Detail Layout End
 
 
 
@@ -53,11 +72,8 @@ const routes: RouteRecordRaw[] = [
   emptyLayout,
   userLayout,
   adminLayout,
-  // {
-  //   path: '/BlogDetail',
-  //   component: () => import('layouts/Empty.vue'),
-  //   children: [{ path: '', component: () => import('pages/user/blog/BlogDetail.vue') }],
-  // },
+  detailLayout,
+ 
 
 ];
 
