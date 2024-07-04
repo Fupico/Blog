@@ -43,35 +43,79 @@
         </q-carousel-slide>
       </q-carousel>
     </div>
+    <!-- <img src="https://idenfit.com/blog/wp-content/uploads/2020/01/GO%CC%88REV@2x.png"> -->
 
     <div class="q-gutter-md q-my-xl">
       <div class="row">
-        <div class="col-0 col-md-4"></div>
-        <div class="col- col-md-4">
-          <q-card class="my-card">
-            <!-- <img src="https://idenfit.com/blog/wp-content/uploads/2020/01/GO%CC%88REV@2x.png"> -->
+        <div class="col-0 col-md-2"></div>
+        <div class="col-12 col-md-8">
+          <!-- <q-card class="my-card">
             <img src="assets/task.jpg" />
             <q-card-section class="bg-transparent text-indigo-10">
               <div class="text-h6 text-center">Görev Takip Sistemi</div>
-              <!-- <div class="text-subtitle2">by Fupico</div> -->
             </q-card-section>
             <q-card-section class="bg-transparent text-indigo-10">
               <div class="text-h6 text-justify">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               </div>
-              <!-- <div class="text-subtitle2">by Fupico</div> -->
             </q-card-section>
-            <!-- https://idenfit.com/blog/wp-content/uploads/2020/01/GO%CC%88REV@2x.png -->
-            <!-- <q-card-actions align="around">
-              <q-btn class="text-teal" flat>Backend</q-btn>
-              <q-btn class="text-indigo" flat>Frontend</q-btn>
-            </q-card-actions> -->
+           
             <q-card-actions align="right">
               <q-btn class="text-indigo" flat to="/project-detail">DAHA FAZLASI </q-btn>
             </q-card-actions>
+          </q-card> -->
+          <!-- <img src="https://idenfit.com/blog/wp-content/uploads/2020/01/GO%CC%88REV@2x.png"> -->
+          <q-card class="my-card" flat bordered>
+            <q-card-section horizontal>
+              
+
+              <q-card-section class="q-pt-xs q-mx-sm">
+                <div class="text-overline text-center">PROJE</div>
+                <div class="text-h5 text-center q-mt-sm q-mb-xs">
+                  GTS - Görev Takip Sistemi
+                </div>
+                <q-card-section class="q-pt-xs">
+                <q-img
+                  class="rounded-borders"
+                  src="assets/task.jpg"
+                />
+              </q-card-section>
+                
+               
+                <div class="text-caption text-grey">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+                <div class="text-caption text-grey">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+                <div class="text-caption text-grey">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+             
+                
+              </q-card-section>
+              
+
+             
+            </q-card-section>
+
+            <q-separator />
+
+            <q-card-actions align="center">
+              <!-- <q-btn flat round icon="code" />
+              <q-btn flat> 04/07/2024 </q-btn> -->
+              <q-btn align="between" push class="btn-fixed-width text-bold bg-indigo-10" to="/project-detail" color="accent" label="PROJEYE GİT" icon-right="flight_takeoff" />
+
+              <!-- <q-btn glossy class="text-bold bg-indigo-10" flat color="white" to="/project-detail" icon-right="send"> PROJEYE GİT   </q-btn> -->
+            </q-card-actions>
           </q-card>
         </div>
-        <div class="col-0 col-md-4"></div>
+        <div class="col-0 col-md-2"></div>
       </div>
 
       <!-- <div class="row">

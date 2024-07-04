@@ -1,7 +1,7 @@
 <template>
   <q-layout view="hHh lpr lff">
     <q-header class="bg-blue-10 text-white">
-      <q-toolbar>
+      <q-toolbar class="glossy ">
         <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
 
         <q-toolbar-title clickable @click="router.push('/')">
@@ -58,7 +58,12 @@
       <!-- drawer content -->
       <q-scroll-area class="fit">
         <q-list v-for="(menuItem, index) in menuList" :key="index">
-          <q-item clickable :active="menuItem.label === 'Outbox'" v-ripple>
+          <q-item
+            :to="menuItem.url"
+            clickable
+            :active="menuItem.label === 'Outbox'"
+            v-ripple
+          >
             <q-item-section avatar>
               <q-icon :name="menuItem.icon" />
             </q-item-section>
@@ -104,6 +109,8 @@
 // import Sidebar from "./Sidebar.vue";
 
 import { ref, onMounted } from "vue";
+import { useQuasar } from "quasar";
+const $q= useQuasar();
 
 const leftDrawerOpen = ref(false);
 const toggleLeftDrawer = () => {
@@ -111,7 +118,14 @@ const toggleLeftDrawer = () => {
 };
 
 onMounted(() => {
-  leftDrawerOpen.value = true;
+  if($q.screen.lt.md){
+    leftDrawerOpen.value=false;
+  }
+  else if($q.screen.gt.sm){
+    leftDrawerOpen.value=true;
+
+  }
+  //leftDrawerOpen.value=true;
 });
 // watch(
 //   () => leftDrawerOpen.value,
@@ -122,39 +136,27 @@ onMounted(() => {
 const menuList = [
   {
     icon: "inbox",
+    label: "GTS Proje",
+    url: "/project-detail",
+    separator: true,
+  },
+  {
+    icon: "start",
     label: "Başlarken",
+    url: "/project-detail",
     separator: true,
   },
   {
     icon: "send",
-    label: "IdentityService",
-    separator: false,
-  },
-  {
-    icon: "delete",
-    label: "LogService",
-    separator: false,
-  },
-  {
-    icon: "error",
-    label: "NotificationService",
+    label: "React",
+    url: "/project-detail",
     separator: true,
   },
   {
-    icon: "settings",
-    label: "FileService",
-    separator: false,
-  },
-  {
-    icon: "feedback",
-    label: "Send Feedback",
-    separator: false,
-  },
-  {
-    icon: "help",
-    iconColor: "primary",
-    label: "Help",
-    separator: false,
+    icon: "delete",
+    label: "Ant Design",
+    url: "/project-detail",
+    separator: true,
   },
 ];
 </script>

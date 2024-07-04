@@ -14,12 +14,12 @@
     <q-card class="my-card" flat bordered>
       <q-card-section horizontal>
         <q-card-section class="q-pt-xs">
-          <div class="text-overline">BACKEND</div>
-          <div class="text-h5 q-mt-sm q-mb-xs">Görev Takip Sistemi için Mikroservis Mimarisi: BACKEND</div>
+          <div class="text-overline">FRONTEND</div>
+          <div class="text-h5 q-mt-sm q-mb-xs">Görev Takip Sistemi için Kullanıcı Arayüzü: FRONTEND</div>
           <q-card-section v-if="$q.screen.lt.sm" class="flex flex-center">
           <q-img
             class="rounded-borders"
-            src="/assets/schemaProject.png"
+            src="/assets/react2.png"
           />
         </q-card-section>
           <div class="text-caption text-grey">
@@ -80,7 +80,7 @@
         <q-card-section v-if="$q.screen.gt.xs" class="col-5 flex flex-center">
           <q-img
             class="rounded-borders"
-            src="/assets/schemaProject.png"
+            src="/assets/react2.png"
           />
         </q-card-section>
       </q-card-section>

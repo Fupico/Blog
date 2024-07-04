@@ -33,21 +33,50 @@ const userLayout: RouteRecordRaw =
 // *#* User Layout End
 
 // *#* Detail Layout Start
-const detailLayout: RouteRecordRaw =
+// const detailLayout: RouteRecordRaw =
+// {
+//   path: '',
+//   component: () => import('src/layouts/Detail/DetailLayout.vue'),
+//   children: [
+//     // { path: '', component: () => import('src/pages/user/Home.vue') },
+//     // { path: '/home', component: () => import('src/pages/user/Home.vue') },
+//     // { path: '/blog-detail', component: () => import('src/pages/user/blog/BlogDetail.vue') },
+//     // { path: '/project-detail', component: () => import('src/pages/user/ProjectDetail.vue') },
+//      { path: '/backend', component: () => import('src/pages/user/Backend.vue') },
+//      { path: '/frontend', component: () => import('src/pages/user/Frontend.vue') },
+
+//   ],
+//   meta: { private: true }
+// };
+// *#* Detail Layout End
+
+// *#* Frontend Detail Layout Start
+const gtsFrontendLayout: RouteRecordRaw =
 {
   path: '',
-  component: () => import('src/layouts/Detail/DetailLayout.vue'),
+  component: () => import('src/layouts/GTSFrontend/GTSFrontendLayout.vue'),
   children: [
-    // { path: '', component: () => import('src/pages/user/Home.vue') },
-    // { path: '/home', component: () => import('src/pages/user/Home.vue') },
-    // { path: '/blog-detail', component: () => import('src/pages/user/blog/BlogDetail.vue') },
-    // { path: '/project-detail', component: () => import('src/pages/user/ProjectDetail.vue') },
+
+     { path: '/frontend', component: () => import('src/pages/user/Frontend.vue') },
+
+  ],
+  meta: { private: true }
+};
+// *#* Frontend Detail Layout End
+
+// *#* Backend Detail Layout Start
+const gtsBackendLayout: RouteRecordRaw =
+{
+  path: '',
+  component: () => import('src/layouts/GTSBackend/GTSBackendLayout.vue'),
+  children: [
+
      { path: '/backend', component: () => import('src/pages/user/Backend.vue') },
 
   ],
   meta: { private: true }
 };
-// *#* Detail Layout End
+// *#* Backend Detail Layout End
 
 
 
@@ -72,7 +101,8 @@ const routes: RouteRecordRaw[] = [
   emptyLayout,
   userLayout,
   adminLayout,
-  detailLayout,
+  gtsFrontendLayout,
+  gtsBackendLayout
  
 
 ];

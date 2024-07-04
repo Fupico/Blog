@@ -29,7 +29,7 @@
             <img src="/assets/task.jpg" />
 
             <q-card-section>
-              <div class="text-h6 text-center">GTS - GÖREV YÖNETİM SİSTEMİ</div>
+              <div class="text-h6 text-center">GTS - GÖREV TAKİP SİSTEMİ</div>
               <div class="text-subtitle2 text-center">FUPİCO</div>
             </q-card-section>
 
@@ -41,9 +41,10 @@
               temporibus necessitatibus asperiores? Neque hic odit ex optio
               repudiandae velit excepturi culpa, eos ullam nostrum beatae?
             </q-card-section>
-            <q-card-actions align="around">
-              <q-btn class="text-teal" to="/backend" flat>Backend</q-btn>
-              <q-btn class="text-indigo" flat>Frontend</q-btn>
+            <q-card-actions class="q-mb-xl" align="around">
+              <q-btn to="/backend" label="Backend" push color="purple" />
+              <q-btn to="/frontend" label="Frontend" push color="indigo" />
+              
             </q-card-actions>
           </q-card>
         </div>
