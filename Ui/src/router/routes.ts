@@ -25,7 +25,7 @@ const userLayout: RouteRecordRaw =
     { path: '/home', component: () => import('src/pages/user/Home.vue') },
     { path: '/blog-detail', component: () => import('src/pages/user/blog/BlogDetail.vue') },
     { path: '/project-detail', component: () => import('src/pages/user/ProjectDetail.vue') },
-    //{ path: '/backend', component: () => import('src/pages/user/Backend.vue') },
+    { path: '/community', component: () => import('src/pages/user/Community.vue') },
 
   ],
   meta: { private: true }

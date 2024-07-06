@@ -16,8 +16,8 @@
         <q-btn
           v-if="$q.screen.gt.sm"
           flat
-          to="/blog-detail"
-          label="Hakkımızda"
+          to="/community"
+          label="Topluluk"
         ></q-btn>
         <q-btn
           v-if="$q.screen.gt.sm"
@@ -35,8 +35,8 @@
               <q-item to="/" clickable>
                 <q-item-section>Anasayfa</q-item-section>
               </q-item>
-              <q-item to="/blog-detail" clickable>
-                <q-item-section>Hakkımızda</q-item-section>
+              <q-item to="/community" clickable>
+                <q-item-section>Topluluk</q-item-section>
               </q-item>
               <q-separator />
               <q-item to="/blog-detail" clickable>

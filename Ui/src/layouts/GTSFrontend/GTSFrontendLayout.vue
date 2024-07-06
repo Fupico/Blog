@@ -1,7 +1,7 @@
 <template>
   <q-layout view="hHh lpr lff">
     <q-header class="bg-blue-10 text-white">
-      <q-toolbar class="glossy ">
+      <q-toolbar class="glossy">
         <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
 
         <q-toolbar-title clickable @click="router.push('/')">
@@ -16,8 +16,8 @@
         <q-btn
           v-if="$q.screen.gt.sm"
           flat
-          to="/blog-detail"
-          label="Hakkımızda"
+          to="/community"
+          label="Topluluk"
         ></q-btn>
         <q-btn
           v-if="$q.screen.gt.sm"
@@ -35,8 +35,8 @@
               <q-item to="/" clickable>
                 <q-item-section>Anasayfa</q-item-section>
               </q-item>
-              <q-item to="/blog-detail" clickable>
-                <q-item-section>Hakkımızda</q-item-section>
+              <q-item to="/community" clickable>
+                <q-item-section>Topluluk</q-item-section>
               </q-item>
               <q-separator />
               <q-item to="/blog-detail" clickable>
@@ -110,7 +110,7 @@
 
 import { ref, onMounted } from "vue";
 import { useQuasar } from "quasar";
-const $q= useQuasar();
+const $q = useQuasar();
 
 const leftDrawerOpen = ref(false);
 const toggleLeftDrawer = () => {
@@ -118,12 +118,10 @@ const toggleLeftDrawer = () => {
 };
 
 onMounted(() => {
-  if($q.screen.lt.md){
-    leftDrawerOpen.value=false;
-  }
-  else if($q.screen.gt.sm){
-    leftDrawerOpen.value=true;
-
+  if ($q.screen.lt.md) {
+    leftDrawerOpen.value = false;
+  } else if ($q.screen.gt.sm) {
+    leftDrawerOpen.value = true;
   }
   //leftDrawerOpen.value=true;
 });

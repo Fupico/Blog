@@ -65,43 +65,80 @@
             </q-card-actions>
           </q-card> -->
           <!-- <img src="https://idenfit.com/blog/wp-content/uploads/2020/01/GO%CC%88REV@2x.png"> -->
-          <q-card class="my-card" flat bordered>
+          <q-card
+            class="my-card"
+            style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
+            flat
+            
+          >
             <q-card-section horizontal>
-              
-
               <q-card-section class="q-pt-xs q-mx-sm">
-                <div class="text-overline text-center">PROJE</div>
-                <div class="text-h5 text-center q-mt-sm q-mb-xs">
-                  GTS - Görev Takip Sistemi
+                <div class="text-overline text-center text-bold">
+                  👋 FUPİCO - GTS PROJESİ
                 </div>
-                <q-card-section class="q-pt-xs">
-                <q-img
-                  class="rounded-borders"
-                  src="assets/task.jpg"
-                />
-              </q-card-section>
-                
-               
-                <div class="text-caption text-grey">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-                <div class="text-caption text-grey">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-                <div class="text-caption text-grey">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-             
-                
-              </q-card-section>
-              
 
-             
+                <q-card-section class="q-pt-xs">
+                  <q-img
+                    class="rounded-borders"
+                    src="assets/task.jpg"
+                    height="150px"
+                  />
+                </q-card-section>
+
+                <q-card-section class="q-pt-xs">
+                  <div class="text-h5 text-bold text-center q-mt-sm q-mb-xs">
+                    GTS - Görev Takip Sistemi 🚀
+                  </div>
+
+                  <div
+                    class="text-justify q-mt-sm q-mb-xs"
+                    style="font-size: 20px"
+                  >
+                    📌 <strong>Görev Takip Sistemi</strong> projesindeki temel
+                    hedefimiz, ekip olarak iş birliği içinde en güncel
+                    teknolojileri öğrenip projelerimize entegre ederek süreçleri
+                    iyileştiren ve proje takibini kolaylaştıran bir ürün
+                    geliştirmektir.
+                  </div>
+                  <div
+                    class="text-grey-10 q-mt-sm text-justify"
+                    style="font-size: 20px"
+                  >
+                    😇 Projemiz <b>açık kaynak</b>
+                    olacak ve topluluk desteğine açık olduğundan, herkesin
+                    katkıda bulunabileceği bir yapıdadır.
+                  </div>
+                  <!-- <div class="text-grey-10 q-mt-sm text-center">
+                  Bu projedeki temel hedefimiz, ekip olarak iş
+                  birliği içinde en güncel teknolojileri öğrenip projelerimize
+                  entegre ederek süreçleri iyileştiren ve proje takibini
+                  kolaylaştıran bir ürün geliştirmektir. Projemiz açık kaynak
+                  olacak ve topluluk desteğine açık olduğundan, herkesin katkıda
+                  bulunabileceği bir yapıdadır.
+                </div> -->
+
+                  <div
+                    class="text-grey-10 q-mt-sm text-justify"
+                    style="font-size: 20px"
+                  >
+                    💡 Bu projeye olan ilginiz ve desteğiniz bizim için çok
+                    önemli.
+                  </div>
+                  <div
+                    class="text-grey-10 q-mt-sm text-justify"
+                    style="font-size: 20px"
+                  >
+                    🤓 Fikirlerinizi, önerilerinizi ve katkılarınızı dört gözle
+                    bekliyoruz!
+                  </div>
+                  <div
+                    class="text-grey-10 q-mt-sm text-justify"
+                    style="font-size: 20px"
+                  >
+                    👇 Detaylar ve gelişmeler için bizi takip etmeyi unutmayın!
+                  </div>
+                </q-card-section>
+              </q-card-section>
             </q-card-section>
 
             <q-separator />
@@ -109,7 +146,15 @@
             <q-card-actions align="center">
               <!-- <q-btn flat round icon="code" />
               <q-btn flat> 04/07/2024 </q-btn> -->
-              <q-btn align="between" push class="btn-fixed-width text-bold bg-indigo-10" to="/project-detail" color="accent" label="PROJEYE GİT" icon-right="flight_takeoff" />
+              <q-btn
+                align="between"
+                push
+                class="btn-fixed-width text-bold bg-indigo-10"
+                to="/project-detail"
+                color="accent"
+                label="PROJEYE GİT"
+                icon-right="flight_takeoff"
+              />
 
               <!-- <q-btn glossy class="text-bold bg-indigo-10" flat color="white" to="/project-detail" icon-right="send"> PROJEYE GİT   </q-btn> -->
             </q-card-actions>
