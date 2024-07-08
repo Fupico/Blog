@@ -1,8 +1,8 @@
 <template>
   <q-layout view="hHh lpr lff">
-    <q-header  class="bg-blue-10 text-white">
-      <q-toolbar class="glossy ">
-        <q-btn  dense flat round icon="menu" @click="toggleLeftDrawer" />
+    <q-header class="bg-blue-10 text-white">
+      <q-toolbar class="glossy">
+        <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
 
         <q-toolbar-title clickable @click="router.push('/')">
           <q-avatar>
@@ -13,17 +13,18 @@
 
         <q-btn v-if="$q.screen.gt.sm" flat to="/" label="Anasayfa"></q-btn>
 
-        <q-btn
+        <!-- <q-btn
           v-if="$q.screen.gt.sm"
           flat
           to="/community"
           label="Topluluk"
-        ></q-btn>
+        ></q-btn> -->
+
         <q-btn
           v-if="$q.screen.gt.sm"
           flat
-          to="/blog-detail"
-          label="Kurallar"
+          to="/faq"
+          label="Sıkça Sorulan Sorular"
         ></q-btn>
         <q-space v-if="$q.screen.gt.sm" />
 
@@ -35,12 +36,13 @@
               <q-item to="/" clickable>
                 <q-item-section>Anasayfa</q-item-section>
               </q-item>
-              <q-item to="/community" clickable>
+              <!-- <q-item to="/community" clickable>
                 <q-item-section>Topluluk</q-item-section>
-              </q-item>
+              </q-item> -->
               <q-separator />
-              <q-item to="/blog-detail" clickable>
-                <q-item-section>Kurallar</q-item-section>
+
+              <q-item to="/faq" clickable>
+                <q-item-section>Sıkça Sorulan Sorular</q-item-section>
               </q-item>
             </q-list>
           </q-menu>
@@ -58,22 +60,20 @@
       <!-- drawer content -->
       <q-scroll-area class="fit">
         <q-list v-for="(menuItem, index) in menuList" :key="index">
-         
-            <q-item
-              :to="menuItem.url"
-              clickable
-              :active="menuItem.label === 'Outbox'"
-              v-ripple
-            >
-              <q-item-section avatar>
-                <q-icon :name="menuItem.icon" />
-              </q-item-section>
-              <q-item-section>
-                {{ menuItem.label }}
-              </q-item-section>
-            </q-item>
-            <q-separator :key="'sep' + index" v-if="menuItem.separator" />
-         
+          <q-item
+            :to="menuItem.url"
+            clickable
+            :active="menuItem.label === 'Outbox'"
+            v-ripple
+          >
+            <q-item-section avatar>
+              <q-icon :name="menuItem.icon" />
+            </q-item-section>
+            <q-item-section>
+              {{ menuItem.label }}
+            </q-item-section>
+          </q-item>
+          <q-separator :key="'sep' + index" v-if="menuItem.separator" />
         </q-list>
       </q-scroll-area>
     </q-drawer>
@@ -92,7 +92,6 @@
         </q-toolbar-title>
       </q-toolbar>
     </q-footer>
-   
   </q-layout>
 </template>
 
@@ -103,22 +102,20 @@
 
 import { ref, onMounted } from "vue";
 import { useQuasar } from "quasar";
-const $q= useQuasar();
+const $q = useQuasar();
 
 const leftDrawerOpen = ref(false);
 const toggleLeftDrawer = () => {
   leftDrawerOpen.value = !leftDrawerOpen.value;
 };
 
-onMounted(()=>{
-  if($q.screen.lt.md){
-    leftDrawerOpen.value=false;
+onMounted(() => {
+  if ($q.screen.lt.md) {
+    leftDrawerOpen.value = false;
+  } else {
+    leftDrawerOpen.value = true;
   }
-  else{
-    leftDrawerOpen.value=true;
-
-  }
-})
+});
 // watch(
 //   () => leftDrawerOpen.value,
 //   (newValue) => {
@@ -129,50 +126,50 @@ const menuList = [
   {
     icon: "inbox",
     label: "GTS Proje",
-    url:"/project-detail",
+    url: "/project-detail",
     separator: true,
   },
   {
     icon: "start",
     label: "Başlarken",
-    url:"/backend",
+    url: "/backend",
     separator: false,
   },
   {
     icon: "send",
     label: "IdentityService",
-    url:"",
+    url: "",
     separator: false,
   },
   {
     icon: "delete",
     label: "LogService",
-    url:"",
+    url: "",
     separator: false,
   },
   {
     icon: "error",
     label: "NotificationService",
-    url:"",
+    url: "",
     separator: true,
   },
   {
     icon: "settings",
     label: "FileService",
-    url:"",
+    url: "",
     separator: false,
   },
   {
     icon: "feedback",
     label: "Send Feedback",
-    url:"",
+    url: "",
     separator: false,
   },
   {
     icon: "help",
     iconColor: "primary",
     label: "Help",
-    url:"",
+    url: "",
     separator: false,
   },
 ];

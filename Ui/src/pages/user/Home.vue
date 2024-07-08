@@ -1,6 +1,6 @@
 <template>
   <div class="q-pa-md">
-    <div class="q-gutter-md">
+    <!-- <div class="q-gutter-md">
       <q-carousel
         arrows
         animated
@@ -18,34 +18,25 @@
           name="first"
           img-src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/03/what-is-a-blog-1.webp"
         >
-          <!-- <div class="absolute-bottom custom-caption">
-            <div class="text-h2"></div>
-            <div class="text-subtitle1"></div>
-          </div> -->
+          
         </q-carousel-slide>
         <q-carousel-slide
           name="second"
           img-src="https://www.hostinger.web.tr/rehberler/wp-content/uploads/sites/6/2017/12/Blog-Nasil-Acilir-1.png"
         >
-          <!-- <div class="absolute-bottom custom-caption">
-            <div class="text-h2">Blog - 2</div>
-            <div class="text-subtitle1"></div>
-          </div> -->
+          
         </q-carousel-slide>
         <q-carousel-slide
           name="third"
           img-src="https://contenthub-static.grammarly.com/blog/wp-content/uploads/2017/11/how-to-write-a-blog-post.jpeg"
         >
-          <!-- <div class="absolute-bottom custom-caption">
-            <div class="text-h2">Blog - 3</div>
-            <div class="text-subtitle1">Açıklama ....</div>
-          </div> -->
+          
         </q-carousel-slide>
       </q-carousel>
-    </div>
+    </div> -->
     <!-- <img src="https://idenfit.com/blog/wp-content/uploads/2020/01/GO%CC%88REV@2x.png"> -->
 
-    <div class="q-gutter-md q-my-xl">
+    <div class=" q-my-xl">
       <div class="row">
         <div class="col-0 col-md-2"></div>
         <div class="col-12 col-md-8">
@@ -104,7 +95,7 @@
                     class="text-grey-10 q-mt-sm text-justify"
                     style="font-size: 20px"
                   >
-                    😇 Projemiz <b>açık kaynak</b>
+                    😇Projemiz <b>açık kaynak</b>
                     olacak ve topluluk desteğine açık olduğundan, herkesin
                     katkıda bulunabileceği bir yapıdadır.
                   </div>

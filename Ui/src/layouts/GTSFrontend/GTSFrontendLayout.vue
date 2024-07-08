@@ -13,17 +13,18 @@
 
         <q-btn v-if="$q.screen.gt.sm" flat to="/" label="Anasayfa"></q-btn>
 
-        <q-btn
+        <!-- <q-btn
           v-if="$q.screen.gt.sm"
           flat
           to="/community"
           label="Topluluk"
-        ></q-btn>
+        ></q-btn> -->
+        
         <q-btn
           v-if="$q.screen.gt.sm"
           flat
-          to="/blog-detail"
-          label="Kurallar"
+          to="/faq"
+          label="Sıkça Sorulan Sorular"
         ></q-btn>
         <q-space v-if="$q.screen.gt.sm" />
 
@@ -35,13 +36,14 @@
               <q-item to="/" clickable>
                 <q-item-section>Anasayfa</q-item-section>
               </q-item>
-              <q-item to="/community" clickable>
+              <!-- <q-item to="/community" clickable>
                 <q-item-section>Topluluk</q-item-section>
               </q-item>
-              <q-separator />
-              <q-item to="/blog-detail" clickable>
-                <q-item-section>Kurallar</q-item-section>
-              </q-item>
+              <q-separator /> -->
+              
+              <q-item to="/faq" clickable>
+              <q-item-section>Sıkça Sorulan Sorular</q-item-section>
+            </q-item>
             </q-list>
           </q-menu>
         </q-btn>
