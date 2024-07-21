@@ -4,7 +4,7 @@
       <q-toolbar class="glossy">
         <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
 
-        <q-toolbar-title clickable @click="router.push('/')">
+        <q-toolbar-title class="cursor-pointer " @click="router.push('/')">
           <q-avatar>
             <img src="icons/favicon-32x32.png" />
           </q-avatar>

@@ -95,7 +95,7 @@
                     class="text-grey-10 q-mt-sm text-justify"
                     style="font-size: 20px"
                   >
-                    😇Projemiz <b>açık kaynak</b>
+                    😇 Projemiz <b>açık kaynak</b>
                     olacak ve topluluk desteğine açık olduğundan, herkesin
                     katkıda bulunabileceği bir yapıdadır.
                   </div>
