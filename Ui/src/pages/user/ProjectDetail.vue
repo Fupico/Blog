@@ -61,7 +61,7 @@
             <div
               class="q-mt-xl text-grey-10 text-center text-body1 text-weight-medium"
             >
-              👨‍💻 Projemiz altı stratejik katmandan oluşuyor ve her bir katman
+              👨‍💻 Projemiz dört stratejik katmandan oluşuyor ve her bir katman
               için belirlediğimiz liderlerimiz var:
 
               <div align="center">
@@ -130,9 +130,9 @@
                         </p>
                         <p class="q-mt-xs">
                           🔵 Geleceğin Öncüleri Topluluğu olarak, Görev Takip
-                          Sistemi projemiz altı kritik katmandan oluşuyor: File
-                          Servisi, Identity Servisi, Log Servisi, Notification
-                          Servisi, Task Servisi ve User Servisi.
+                          Sistemi projemiz dört kritik katmandan oluşuyor: File
+                          Servisi, User Management Servisi, Notification
+                          Servisi, Task Servisi.
                         </p>
                         <p class="q-mt-xs">
                           🔵 Her biri için belirlenen yetkililer, kendi
@@ -208,8 +208,8 @@
                           🔵 Fikirlerinizi, önerilerinizi ve katkılarınızı
                           bekliyoruz! Birlikte daha güçlüyüz!
                         </p>
-                        
-                        
+
+
                       </q-card-section>
                     </q-card>
                   </q-expansion-item>
@@ -233,7 +233,7 @@
                         toplantı notları alabilen ve eğitim süreçlerinde
                         rehberlik edebilecek kişileri de dahil etmeye açığız.
                         </p>
-                         
+
                       </q-card-section>
                     </q-card>
                   </q-expansion-item>
@@ -276,7 +276,7 @@
                 </q-item-section>
               </q-item>
 
-              
+
             </div>
           </q-list>
 
@@ -313,35 +313,23 @@ const serviceDistributionList = ref([
   {
     id: 2,
     leader: "Devrim Mehmet Pattabanoğlu",
-    service: "Identity Servisi",
+    service: "User Management Servisi",
     color: "bg-teal-8",
   },
   {
     id: 3,
-    leader: "Ümit Şahin",
-    service: "Log Servisi",
-    color: "bg-orange-8",
-  },
-  {
-    id: 4,
     leader: "Merve Özalp",
     service: "Notification Servisi",
     color: "bg-purple-8",
   },
   {
-    id: 5,
+    id: 4,
     leader: "Efrun Evdi",
     service: "Task Servisi",
     color: "bg-grey-8",
   },
   {
-    id: 6,
-    leader: "Ömer Çakmak",
-    service: "User Servisi",
-    color: "bg-green-8",
-  },
-  {
-    id: 7,
+    id: 5,
     leader: "İbrahim Hakkı Doğan",
     service: "Frontend",
     color: "bg-pink-8",
@@ -416,6 +404,40 @@ const meetingList = ref([
       "Ümit Şahin",
     ],
     date: "08/07/2024",
+  },
+  {
+    id: 3,
+    name: "Genel Toplantı",
+    subject: "PROJEYE GENEL BAKIŞ VE YENİ KATILIMCILAR",
+    agendas: [
+    "Yeni Katılanlar ile Tanışma ",
+    "Proje Sunum",
+      "Servislerde Neler Yapıldı?",
+    ],
+    notes: [
+      "Proje genel hatlarıyla anlatıldı ve yeni gelen katılımcılarla tanışıldı.",
+      " Log servisinin projeden çıkarılacağı bilgisi verildi.",
+      "Eksik olan servislere göre yeni gelen ekip üyeleri uygun gruplara dağıtıldı.",
+      "Servislerle ilgili araştırma yapılması ve öğretici metinlerin oluşturularak ekip ile paylaşılması gerektiği vurgulandı.",
+    ],
+    participants: [
+      "Abdullah Hamzaçebi",
+      "Devrim Mehmet Pattabanoğlu",
+      "Efrun Evdi",
+      "Furkan Daloğlu",
+      "İbrahim Hakkı Doğan",
+      "Mert Dedeoğlu",
+      "Merve Özalp",
+      "Mustafa Emre İlhan",
+      "Ömer Çakmak",
+      "Şule Celep",
+      "Utku Özen",
+      "Ümit Şahin",
+      "Bahadırhan Sefa Algur",
+       "İlker Yüce"
+
+    ],
+    date: "23/09/2024",
   },
 ]);
 const reversedMeetingList = computed(() => {

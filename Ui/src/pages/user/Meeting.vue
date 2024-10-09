@@ -27,7 +27,7 @@
                 @click="openDetailModal(item)"
                 rounded
               />
-              
+
             </td>
             <td class="text-center">{{ item.id }}</td>
             <td class="text-center">{{ item.subject }}</td>
@@ -116,6 +116,40 @@ const meetingList = ref([
       "Ümit Şahin",
     ],
     date: "08/07/2024",
+  },
+  {
+    id: 3,
+    name: "Genel Toplantı",
+    subject: "PROJEYE GENEL BAKIŞ VE YENİ KATILIMCILAR",
+    agendas: [
+    "Yeni Katılanlar ile Tanışma ",
+    "Proje Sunum",
+      "Servislerde Neler Yapıldı?",
+    ],
+    notes: [
+      "Proje genel hatlarıyla anlatıldı ve yeni gelen katılımcılarla tanışıldı.",
+      " Log servisinin projeden çıkarılacağı bilgisi verildi.",
+      "Eksik olan servislere göre yeni gelen ekip üyeleri uygun gruplara dağıtıldı.",
+      "Servislerle ilgili araştırma yapılması ve öğretici metinlerin oluşturularak ekip ile paylaşılması gerektiği vurgulandı.",
+    ],
+    participants: [
+      "Abdullah Hamzaçebi",
+      "Devrim Mehmet Pattabanoğlu",
+      "Efrun Evdi",
+      "Furkan Daloğlu",
+      "İbrahim Hakkı Doğan",
+      "Mert Dedeoğlu",
+      "Merve Özalp",
+      "Mustafa Emre İlhan",
+      "Ömer Çakmak",
+      "Şule Celep",
+      "Utku Özen",
+      "Ümit Şahin",
+      "Bahadırhan Sefa Algur",
+      "İlker Yüce"
+
+    ],
+    date: "23/09/2024",
   },
 ]);
 
