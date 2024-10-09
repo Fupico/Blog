@@ -1,66 +1,16 @@
 <template>
   <div class="q-pa-md">
-    <!-- <div class="q-gutter-md">
-      <q-carousel
-        arrows
-        animated
-        v-model="slide"
-        transition-prev="scale"
-        transition-next="scale"
-        :autoplay="true"
-        swipeable
-        control-color="white"
-        padding
-        height="400px"
-        class="text-white rounded-borders"
-      >
-        <q-carousel-slide
-          name="first"
-          img-src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/03/what-is-a-blog-1.webp"
-        >
-          
-        </q-carousel-slide>
-        <q-carousel-slide
-          name="second"
-          img-src="https://www.hostinger.web.tr/rehberler/wp-content/uploads/sites/6/2017/12/Blog-Nasil-Acilir-1.png"
-        >
-          
-        </q-carousel-slide>
-        <q-carousel-slide
-          name="third"
-          img-src="https://contenthub-static.grammarly.com/blog/wp-content/uploads/2017/11/how-to-write-a-blog-post.jpeg"
-        >
-          
-        </q-carousel-slide>
-      </q-carousel>
-    </div> -->
-    <!-- <img src="https://idenfit.com/blog/wp-content/uploads/2020/01/GO%CC%88REV@2x.png"> -->
 
     <div class=" q-my-xl">
       <div class="row">
         <div class="col-0 col-md-2"></div>
         <div class="col-12 col-md-8">
-          <!-- <q-card class="my-card">
-            <img src="assets/task.jpg" />
-            <q-card-section class="bg-transparent text-indigo-10">
-              <div class="text-h6 text-center">Görev Takip Sistemi</div>
-            </q-card-section>
-            <q-card-section class="bg-transparent text-indigo-10">
-              <div class="text-h6 text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              </div>
-            </q-card-section>
-           
-            <q-card-actions align="right">
-              <q-btn class="text-indigo" flat to="/project-detail">DAHA FAZLASI </q-btn>
-            </q-card-actions>
-          </q-card> -->
-          <!-- <img src="https://idenfit.com/blog/wp-content/uploads/2020/01/GO%CC%88REV@2x.png"> -->
+
           <q-card
             class="my-card"
             style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
             flat
-            
+
           >
             <q-card-section horizontal>
               <q-card-section class="q-pt-xs q-mx-sm">
@@ -99,14 +49,7 @@
                     olacak ve topluluk desteğine açık olduğundan, herkesin
                     katkıda bulunabileceği bir yapıdadır.
                   </div>
-                  <!-- <div class="text-grey-10 q-mt-sm text-center">
-                  Bu projedeki temel hedefimiz, ekip olarak iş
-                  birliği içinde en güncel teknolojileri öğrenip projelerimize
-                  entegre ederek süreçleri iyileştiren ve proje takibini
-                  kolaylaştıran bir ürün geliştirmektir. Projemiz açık kaynak
-                  olacak ve topluluk desteğine açık olduğundan, herkesin katkıda
-                  bulunabileceği bir yapıdadır.
-                </div> -->
+
 
                   <div
                     class="text-grey-10 q-mt-sm text-justify"
@@ -154,115 +97,13 @@
         <div class="col-0 col-md-2"></div>
       </div>
 
-      <!-- <div class="row">
-        <div
-          class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 q-pa-md"
-          
-        >
-          <BlogCard
-            :title="'Backend'"
-            description="Açıklama... dlfkld dfdfd d fdf fdfdfd"
-            date="12/05/2024"
-            :detailUrl="'Backend'"
-            img-url="https://fupico.com/assets/gorsel.jpg"
-          ></BlogCard>
-        </div>
-        <div
-          class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 q-pa-md"
-          
-        >
-          <BlogCard
-            :title="'Frontend'"
-            description="Açıklama... dlfkld dfdfd d fdf fdfdfd"
-            date="12/05/2024"
-            :detailUrl="'Frontend'"
-            img-url="/assets/react2.png"
-          ></BlogCard>
-        </div>
-      </div> -->
+
     </div>
 
-    <!-- <div class="q-gutter-xl q-ma-xl q-px-xl">
-      <q-list bordered class="rounded-borders">
-        <q-expansion-item>
-          <template v-slot:header>
-            <q-item-section align="center"> Biz Kimiz </q-item-section>
-          </template>
 
-          <q-card>
-            <q-card-section>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem,
-              eius reprehenderit eos corrupti commodi magni quaerat ex numquam,
-              dolorum officiis modi facere maiores architecto suscipit iste
-              eveniet doloribus ullam aliquid.
-            </q-card-section>
-          </q-card>
-        </q-expansion-item>
-
-        <q-separator />
-
-        <q-expansion-item>
-          <template v-slot:header>
-            <q-item-section> Neler Yapıyoruz? </q-item-section>
-          </template>
-
-          <q-card>
-            <q-card-section>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem,
-              eius reprehenderit eos corrupti commodi magni quaerat ex numquam,
-              dolorum officiis modi facere maiores architecto suscipit iste
-              eveniet doloribus ullam aliquid.
-            </q-card-section>
-          </q-card>
-        </q-expansion-item>
-
-        <q-separator />
-
-        <q-expansion-item>
-          <template v-slot:header>
-            <q-item-section avatar>
-              <q-icon color="purple" name="signal_wifi_off" />
-            </q-item-section>
-
-            <q-item-section> Ekip </q-item-section>
-          </template>
-
-          <q-card>
-            <q-card-section>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem,
-              eius reprehenderit eos corrupti commodi magni quaerat ex numquam,
-              dolorum officiis modi facere maiores architecto suscipit iste
-              eveniet doloribus ullam aliquid.
-            </q-card-section>
-          </q-card>
-        </q-expansion-item>
-      </q-list>
-    </div> -->
   </div>
 
-  <!-- *#* Blog Card Start -->
-  <!-- <div class="row">
-    <div
-      class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 q-pa-md"
-      v-for="(i,index) in 12"
-      :key="index++"
-    >
-      <BlogCard
-        :title="'Blog - ' + index++"
-        description="Açıklama... dlfkld dfdfd d fdf fdfdfd"
-        date="12/05/2024"
-        :detailUrl="'BlogDetail'"
-        img-url="https://fupico.com/assets/gorsel.jpg"
-      ></BlogCard>
-    </div>
-  </div> -->
-  <!-- *#* Blog Card Start -->
 
-  <!-- <div class="q-pa-md">
-    <div class="q-gutter-md">
-     
-    </div>
-  </div> -->
 </template>
 
 <script setup>
