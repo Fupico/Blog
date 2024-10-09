@@ -27,7 +27,7 @@
                 @click="openDetailModal(item)"
                 rounded
               />
-              
+
             </td>
             <td class="text-center">{{ item.id }}</td>
             <td class="text-center">{{ item.subject }}</td>
@@ -145,7 +145,8 @@ const meetingList = ref([
       "Şule Celep",
       "Utku Özen",
       "Ümit Şahin",
-      "Bahadır ve İlker (Yeni katılan ekip üyeleri)"
+      "Bahadırhan Sefa Algur",
+      "İlker Yüce"
 
     ],
     date: "23/09/2024",
