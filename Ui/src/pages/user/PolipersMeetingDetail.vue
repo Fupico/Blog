@@ -101,17 +101,31 @@ const meetingList = ref([
       "Servisler Neler Olmalı?",
       "Servis Dağılımı",
       "Frontend Kullanılacak Kütüphaneler",
+      "Backend: Login ve Register API uçlarının düzenlenmesi",
+      "Swagger yapılandırması ve publish işlemleri",
+      "Frontend: Login, Register ve AdminLayout geliştirme",
+      "About sayfası erişim kontrolü",
+      "Register sayfasının dinamik hale getirilmesi",
+      "Company yerine Project Setting yapısına geçiş",
+      "About CRUD API uçlarının yazılması",
     ],
     notes: [
       "Yol haritası belirlendi.",
       "Kullanılacak teknolojiler hakkında konuşuldu.",
       "Proje reposu oluşturuldu.",
+      "Login ve Register API uçları yeniden yazıldı.",
+      "Swagger paketleri yüklendi ve publish alındı.",
+      "Login, Register ve AdminLayout bileşenleri geliştirildi.",
+      "About sayfası admin rolü dışında 404'e yönlendirilecek.",
+      "Register sayfası dinamikleştirilecek.",
+      "Company alanı kaldırılacak, ayarlar Project Settings üzerinden alınacak.",
+      "About için CRUD API'ler yazılacak.",
     ],
     participants: ["Devrim Mehmet Pattabanoğlu", "Şule Celep"],
     date: "01/05/2025",
   },
-  
 ]);
+
 onMounted(() => {
   console.log("item", item.value);
   dataMeeting.value = meetingList.value.find((x) => x.id === item.value);
