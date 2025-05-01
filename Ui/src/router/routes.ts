@@ -28,7 +28,7 @@ const userLayout: RouteRecordRaw = {
   component: () => import("src/layouts/User/UserLayout.vue"),
   children: [
     { path: "", component: () => import("src/pages/user/Home.vue") },
-    { path: "/home", component: () => import("src/pages/user/Home.vue") },
+    { path: "/gts-home", component: () => import("src/pages/user/GTSHome.vue") },
     {
       path: "/blog-detail",
       component: () => import("src/pages/user/blog/BlogDetail.vue"),
@@ -48,6 +48,15 @@ const userLayout: RouteRecordRaw = {
       path: "/meeting-detail/:id",
       name: "MeetingDetail",
       component: () => import("src/pages/user/MeetingDetail.vue"),
+    },
+    {
+      path: "/journal-detail",
+      component: () => import("src/pages/user/PolipersProjectDetail.vue"),
+    },
+    {
+      path: "/journal-meeting-detail/:id",
+      name: "PolipersMeetingDetail",
+      component: () => import("src/pages/user/PolipersMeetingDetail.vue"),
     },
   ],
   meta: { private: true },

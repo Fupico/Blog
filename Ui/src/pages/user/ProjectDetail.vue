@@ -324,7 +324,7 @@ const serviceDistributionList = ref([
   },
   {
     id: 4,
-    leader: "Efrun Evdi",
+    leader: "Efrun Çetkin",
     service: "Task Servisi",
     color: "bg-grey-8",
   },
@@ -352,7 +352,7 @@ const meetingList = ref([
       "Frontend: React, Ant Design UI kütüphaneleri kullanılacak, model yapılarında Typescript tercih edildi.",
       "User Service: Ömer Çakmak, Abdullah Hamzaçebi ",
       "Identity Service: Devrim Mehmet Pattabanoğlu, Ümit Şahin, Mustafa Emre İlhan",
-      "Task Service: Efrun Evdi, Mert Dedeoğlu",
+      "Task Service: Efrun Çetkin, Mert Dedeoğlu",
       "Log Service: İbrahim Hakkı Doğan",
       "Notification Service: Merve Özalp, Utku Özen",
       "File Service: Şule Celep, Furkan Daloğlu",
@@ -361,7 +361,7 @@ const meetingList = ref([
     participants: [
       "Abdullah Hamzaçebi",
       "Devrim Mehmet Pattabanoğlu",
-      "Efrun Evdi",
+      "Efrun Çetkin",
       "Furkan Daloğlu",
       "İbrahim Hakkı Doğan",
       "Mert Dedeoğlu",
@@ -392,7 +392,7 @@ const meetingList = ref([
     participants: [
       "Abdullah Hamzaçebi",
       "Devrim Mehmet Pattabanoğlu",
-      "Efrun Evdi",
+      "Efrun Çetkin",
       "Furkan Daloğlu",
       "İbrahim Hakkı Doğan",
       "Mert Dedeoğlu",
@@ -423,7 +423,7 @@ const meetingList = ref([
     participants: [
       "Abdullah Hamzaçebi",
       "Devrim Mehmet Pattabanoğlu",
-      "Efrun Evdi",
+      "Efrun Çetkin",
       "Furkan Daloğlu",
       "İbrahim Hakkı Doğan",
       "Mert Dedeoğlu",

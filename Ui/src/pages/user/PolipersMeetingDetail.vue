@@ -37,7 +37,7 @@
                     label="Projeye DÖN"
                     flat
                     icon="keyboard_return"
-                    :to="'/project-detail'"
+                    :to="'/journal-detail'"
                     color="deep-orange"
                   />
                 </div>
@@ -95,105 +95,22 @@ const meetingList = ref([
   {
     id: 1,
     name: "Genel Toplantı",
-    subject: "Servis Dağılımı ve Frontend",
+    subject: "Proje Başlangıç Toplantısı",
     agendas: [
-      "Tanışma",
+      "Yol Haritası Belirleme",
       "Servisler Neler Olmalı?",
       "Servis Dağılımı",
       "Frontend Kullanılacak Kütüphaneler",
     ],
     notes: [
-      "Backend: User Service, Identity Service, Task Service, Log Service, Notification Service, File Service olarak 6 servis belirlendi.",
-      "Frontend: React, Ant Design UI kütüphaneleri kullanılacak, model yapılarında Typescript tercih edildi.",
-      "User Service: Ömer Çakmak, Abdullah Hamzaçebi ",
-      "Identity Service: Devrim Mehmet Pattabanoğlu, Ümit Şahin, Mustafa Emre İlhan",
-      "Task Service: Efrun Çetkin, Mert Dedeoğlu",
-      "Log Service: İbrahim Hakkı Doğan",
-      "Notification Service: Merve Özalp, Utku Özen",
-      "File Service: Şule Celep, Furkan Daloğlu",
-      "Frontend React: İbrahim Hakkı Doğan, Ömer Çakmak, Şule Celep",
+      "Yol haritası belirlendi.",
+      "Kullanılacak teknolojiler hakkında konuşuldu.",
+      "Proje reposu oluşturuldu.",
     ],
-    participants: [
-      "Abdullah Hamzaçebi",
-      "Devrim Mehmet Pattabanoğlu",
-      "Efrun Çetkin",
-      "Furkan Daloğlu",
-      "İbrahim Hakkı Doğan",
-      "Mert Dedeoğlu",
-      "Merve Özalp",
-      "Mustafa Emre İlhan",
-      "Ömer Çakmak",
-      "Şule Celep",
-      "Utku Özen",
-      "Ümit Şahin",
-    ],
-    date: "01/07/2024",
+    participants: ["Devrim Mehmet Pattabanoğlu", "Şule Celep"],
+    date: "01/05/2025",
   },
-  {
-    id: 2,
-    name: "Genel Toplantı",
-    subject: "Proje Takibi",
-    agendas: [
-      "Tanışma",
-      "Proje Sunum",
-      "Eğitimlerde Neler Yapıldı?",
-      "Servislerde Neler Yapıldı?",
-    ],
-    notes: [
-      "Loglama için ayrı bir servis açılması yerine her bir servis için ayrı loglama yapılması üzerine araştırma yapılacak.",
-      "User Servis ile Identity Servis ayrı ayrı yapılmak yerine, UserManagementSystem adı altında birleştirilecek.",
-      "Projedeki görev takip için program araştırılacak.",
-    ],
-    participants: [
-      "Abdullah Hamzaçebi",
-      "Devrim Mehmet Pattabanoğlu",
-      "Efrun Çetkin",
-      "Furkan Daloğlu",
-      "İbrahim Hakkı Doğan",
-      "Mert Dedeoğlu",
-      "Merve Özalp",
-      "Mustafa Emre İlhan",
-      "Ömer Çakmak",
-      "Şule Celep",
-      "Utku Özen",
-      "Ümit Şahin",
-    ],
-    date: "08/07/2024",
-  },
-  {
-    id: 3,
-    name: "Genel Toplantı",
-    subject: "PROJEYE GENEL BAKIŞ VE YENİ KATILIMCILAR",
-    agendas: [
-      "Yeni Katılanlar ile Tanışma ",
-      "Proje Sunum",
-      "Servislerde Neler Yapıldı?",
-    ],
-    notes: [
-      "Proje genel hatlarıyla anlatıldı ve yeni gelen katılımcılarla tanışıldı.",
-      " Log servisinin projeden çıkarılacağı bilgisi verildi.",
-      "Eksik olan servislere göre yeni gelen ekip üyeleri uygun gruplara dağıtıldı.",
-      "Servislerle ilgili araştırma yapılması ve öğretici metinlerin oluşturularak ekip ile paylaşılması gerektiği vurgulandı.",
-    ],
-    participants: [
-      "Abdullah Hamzaçebi",
-      "Devrim Mehmet Pattabanoğlu",
-      "Efrun Çetkin",
-      "Furkan Daloğlu",
-      "İbrahim Hakkı Doğan",
-      "Mert Dedeoğlu",
-      "Merve Özalp",
-      "Mustafa Emre İlhan",
-      "Ömer Çakmak",
-      "Şule Celep",
-      "Utku Özen",
-      "Ümit Şahin",
-      "Bahadırhan Sefa Algur",
-      "İlker Yüce"
-
-    ],
-    date: "23/09/2024",
-  },
+  
 ]);
 onMounted(() => {
   console.log("item", item.value);
