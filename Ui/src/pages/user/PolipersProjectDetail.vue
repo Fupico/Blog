@@ -74,7 +74,7 @@
               👨‍💻 Proje Geliştirme Ekibi:
 
               <div align="center">
-                <div class="q-ma-xs" style="max-width: 350px">
+                <div class="q-ma-xs flex flex-center" style="max-width: 350px">
                   <q-list
                     v-for="(item, index) in serviceDistributionList"
                     :key="index"
@@ -89,10 +89,10 @@
                       v-ripple
                     >
                       <q-item-section>
-                        <q-item-label class="text-white" overline>{{
+                        <q-item-label class="text-white">{{
                           item.leader
                         }}</q-item-label>
-                        <q-item-label class="text-yellow-4">{{
+                        <q-item-label class="text-yellow-7" overline>{{
                           item.service
                         }}</q-item-label>
                       </q-item-section>
@@ -280,28 +280,107 @@ const serviceDistributionList = ref([
     service: "Yazılım Geliştirici",
     color: "bg-indigo-8",
   },
+  {
+    id: 3,
+    leader: "Zeynep Danış",
+    service: "Yazılım Geliştirici",
+    color: "bg-purple-8",
+  },
+  {
+    id: 4,
+    leader: "Dilara Melis Dümdüz",
+    service: "İçerik Yazarı",
+    color: "bg-brown-8",
+  },
+  {
+    id: 5,
+    leader: "Eylem Bozdak",
+    service: "Katkı Sağlayan",
+    color: "bg-blue-8",
+  },
+  {
+    id: 6,
+    leader: "Ahmet Meriç Kınalı",
+    service: "Katkı Sağlayan",
+    color: "bg-cyan-8",
+  },
 ]);
 
 const meetingList = ref([
   {
     id: 1,
-    name: "Genel Toplantı",
+    name: "Dergi/Blog Projesi Tanıtımı ve İş Akışı",
     subject: "Proje Başlangıç Toplantısı",
+    agendas: [
+      "Tanışma",
+      "Proje Genel Tanıtımı",
+      "Makale Yükleme Süreci",
+      "Programın İş Mantığının Açıklanması",
+    ],
+    notes: [
+      "Toplantı tanışma ile başladı.",
+      "Proje genel hatlarıyla tanıtıldı.",
+      "Proje geliştirme süreci detaylıca anlatıldı.",
+      "İş akışı hakkında bilgi verildi.",
+    ],
+    participants: [
+      "Devrim Mehmet Pattabanoğlu",
+      "Şule Celep",
+      "Dilara Melis Dümdüz",
+      "Ahmet Meriç Kınalı",
+      "Eylem Bozdak",
+    ],
+    date: "27/04/2025",
+  },
+  {
+    id: 2,
+    name: "Genel Toplantı",
+    subject: "Proje Gelİştİrme Sürecİ ve İş Akışı",
     agendas: [
       "Yol Haritası Belirleme",
       "Servisler Neler Olmalı?",
       "Servis Dağılımı",
       "Frontend Kullanılacak Kütüphaneler",
+      "Backend: Login ve Register API uçlarının düzenlenmesi",
+      "Swagger yapılandırması ve publish işlemleri",
+      "Frontend: Login, Register ve AdminLayout geliştirme",
+      "About sayfası erişim kontrolü",
+      "Register sayfasının dinamik hale getirilmesi",
+      "Company yerine Project Setting yapısına geçiş",
+      "About CRUD API uçlarının yazılması",
     ],
     notes: [
       "Yol haritası belirlendi.",
       "Kullanılacak teknolojiler hakkında konuşuldu.",
       "Proje reposu oluşturuldu.",
+      "Login ve Register API uçları yeniden yazıldı.",
+      "Swagger paketleri yüklendi ve publish alındı.",
+      "Login, Register ve AdminLayout bileşenleri geliştirildi.",
+      "About sayfası admin rolü dışında 404'e yönlendirilecek.",
+      "Register sayfası dinamikleştirilecek.",
+      "Company alanı kaldırılacak, ayarlar Project Settings üzerinden alınacak.",
+      "About için CRUD API'ler yazılacak.",
     ],
     participants: ["Devrim Mehmet Pattabanoğlu", "Şule Celep"],
     date: "01/05/2025",
   },
-  
+  {
+    id: 3,
+    name: "Katkı Sağlama Görüşmesi",
+    subject: "Projeye Katkı Sürecİ",
+    agendas: [
+      "Proje Hakkında Genel Bilgilendirme",
+      "Katkı Sağlama Sürecinin Açıklanması",
+      "Frontend Geliştirmelerine Katkı Olanakları",
+    ],
+    notes: [
+      "Proje genel yapısı ve amacı hakkında bilgi verildi.",
+      "Frontend tarafına nasıl katkıda bulunabileceği konuşuldu.",
+      "Hangi sayfanın geliştirileceği ve ilgili API uçlarının bir sonraki toplantıda belirleneceği belirtildi.",
+    ],
+    participants: ["Devrim Mehmet Pattabanoğlu", "Şule Celep", "Zeynep Danış"],
+    date: "12/05/2025",
+  },
 ]);
 const reversedMeetingList = computed(() => {
   return [...meetingList.value].reverse();
